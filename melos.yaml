@@ -1,0 +1,29 @@
+name: rescue_mobile_suite
+
+packages:
+  - apps/*
+  - packages/*
+
+command:
+  bootstrap:
+    runPubGetInParallel: true
+  analyze:
+    exec: flutter analyze .
+  test:
+    exec: flutter test
+    packageFilters:
+      dirExists: test
+
+scripts:
+  get:all:
+    run: melos bootstrap
+    description: Install dependencies for all packages
+  analyze:all:
+    run: melos run analyze --no-select
+    description: Run flutter analyze in all packages
+  run:user:
+    run: melos exec --scope=rescue_user_app -- flutter run
+    description: Run rescue_user_app
+  run:worker:
+    run: melos exec --scope=rescue_worker_app -- flutter run
+    description: Run rescue_worker_app

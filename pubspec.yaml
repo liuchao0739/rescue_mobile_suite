@@ -1,0 +1,16 @@
+name: rescue_mobile_suite_workspace
+publish_to: none
+
+environment:
+  sdk: ^3.9.2
+
+dev_dependencies:
+  melos: ^7.0.0
+
+workspace:
+  - apps/rescue_user_app
+  - apps/rescue_worker_app
+  - packages/rescue_mobile_core
+  - packages/rescue_mobile_models
+  - packages/rescue_mobile_map
+  - packages/rescue_mobile_ui
