@@ -4,7 +4,11 @@
 > 文档日期：2026-05-29  
 > 界面语言：English (en-US) | 需求文档语言：中文
 
-**配套开发手册**：[rescue_platform_dev_guide.md](./rescue_platform_dev_guide.md)（仓库克隆、Monorepo、Android Studio、真机运行、SourceTree 等实操汇总）
+**全流程入口**：[00_全流程总览.md](./00_全流程总览.md)  
+**开发工程**：[04_开发_工程手册.md](./04_开发_工程手册.md) | **前端**：[05_开发_前端_移动端与PC端.md](./05_开发_前端_移动端与PC端.md)  
+**后端**：[Spring Boot](./06_开发_后端_SpringBoot路线.md) | [Go](./07_开发_后端_Go路线.md)  
+**设计**：[03_设计_移动端设计交接指南.md](./03_设计_移动端设计交接指南.md) | **产品学习**：[02_产品_需求与原型学习指南.md](./02_产品_需求与原型学习指南.md)  
+**运维**：[09_运维_部署与环境指南.md](./09_运维_部署与环境指南.md) | **测试**：[10_测试_验收与测试指南.md](./10_测试_验收与测试指南.md)
 
 ---
 
@@ -95,7 +99,7 @@
 └── rescue_platform_infra/        # DevOps、K8s、Terraform、监控配置
 ```
 
-克隆、SourceTree、运行调试详见 [开发手册](./rescue_platform_dev_guide.md)。
+克隆、SourceTree、运行调试详见 [开发手册](./04_开发_工程手册.md)。
 
 ### 1.6 MQTT Topic 前缀
 
@@ -599,7 +603,7 @@ Dashboard → SOS 中心/列表/详情 → 调度中心/工单看板/人工派�
 
 ## 十七、项目落地进展
 
-> 汇总截至 2026-05-29 的工程落地情况；操作细节见 [开发手册](./rescue_platform_dev_guide.md)。
+> 汇总截至 2026-05-29 的工程落地情况；操作细节见 [开发手册](./04_开发_工程手册.md)。
 
 ### 17.1 已完成
 
@@ -607,11 +611,11 @@ Dashboard → SOS 中心/列表/详情 → 调度中心/工单看板/人工派�
 |------|------|
 | 需求梳理 | 基于 docx 整理 MVP 范围、五端架构、分期与 KPI |
 | 产品命名 | `rescue_xxx_xxx` 规范，见第一章 |
-| GitHub 五仓 | 全部 Public，含 README 与 `docs/rescue_platform_mvp_plan.md` |
+| GitHub 五仓 | 全部 Public，含 README 与 `docs/01_产品_MVP规划与技术方案.md` |
 | 本地 clone | `~/rescue_platform/` 下 5 仓已克隆，可用 SourceTree 管理 |
 | Flutter Monorepo | `rescue_mobile_suite`：双 App + 4 共享包 + Melos workspace |
 | 真机验证 | `rescue_user_app` 已在 Android 真机 V2049A 上 `flutter run` 通过 |
-| 文档双册 | `rescue_platform_mvp_plan.md` + `rescue_platform_dev_guide.md` |
+| 文档套件 | 00～10 中文文档全流程（见 [00_全流程总览.md](./00_全流程总览.md)） |
 
 ### 17.2 Monorepo 脚手架摘要
 
